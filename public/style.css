@@ -1,0 +1,224 @@
+body {
+  /* font-family: "Inter", sans-serif; */
+  /* font-family: "Outfit", sans-serif; */
+  /* font-family: "Outfit", sans-serif; */
+  font-family: "Inter", sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-weight: 400;
+}
+/* .container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  text-align: center;
+}
+.container:hover  {
+  box-shadow: 0 8px 24px rgba(75, 137, 223, 0.3);
+  width: 410px 1svb;
+} */
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  max-width: 90vw;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.container:hover {
+  box-shadow: 0 12px 32px rgba(75, 137, 223, 0.4);
+  transform: scale(1.03);
+}
+h1 {
+  color: #333;
+  /* text-align: left; */
+  margin-bottom: 20px;
+}
+
+form div {
+  margin-bottom: 20px;
+  text-align: left;
+}
+label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+/* input[type="url"],
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3 ease, box-shadow 0.3 ease, trasform 0.2s ease;
+}
+input[type="url"]:focus,
+input[type="text"]:focus {
+  border-color: #4b89df;
+  box-shadow: 0 0 0 4px rgba(75, 137, 223, 0.2);
+  transform: scale(1.01);
+} */
+
+input[type="url"],
+input[type="text"] {
+  width: 98%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+/* Focus and active animation */
+input[type="url"]:focus,
+input[type="text"]:focus {
+  border-color: #4b89df;
+  box-shadow: 0 0 0 4px rgba(75, 137, 223, 0.2);
+  transform: scale(1.01);
+}
+
+button {
+  background-color: #4a90e2;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 4px 14px rgba(74, 144, 226, 0.3);
+}
+
+/* Hover effect */
+button:hover {
+  background-color: #3b7dd8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(74, 144, 226, 0.4);
+}
+
+/* Active (click) effect */
+button:active {
+  transform: scale(0.98);
+  box-shadow: 0 3px 8px rgba(74, 144, 226, 0.2);
+}
+h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #4a90e2;
+  margin: 10px auto 0;
+  border-radius: 2px;
+  animation: slideIn 0.5s ease-out;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+li {
+  background: #f7f9fc;
+  border: 1px solid #e0e6f1;
+  padding: 14px 20px;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(74, 144, 226, 0.15);
+}
+
+li a {
+  text-decoration: none;
+  color: #4a90e2;
+  font-weight: 600;
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+li a:hover {
+  color: #2f6fcc;
+  transform: scale(1.05);
+}
+@keyframes slideIn {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 60px;
+    opacity: 1;
+  }
+}
+#shorted-urls {
+  max-height: 200px; /* Adjust height as needed */
+  overflow-y: auto; /* Enables vertical scroll */
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  list-style: none;
+}
+
+#shorted-urls li {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+#shorted-urls li:last-child {
+  border-bottom: none;
+}
+#shorted-urls {
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar in WebKit browsers (Chrome, Safari) */
+#shorted-urls::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* For Firefox */
+#shorted-urls {
+  scrollbar-width: none;
+}
