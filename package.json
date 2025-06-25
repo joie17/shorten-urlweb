@@ -4,11 +4,14 @@
   "description": "",
   "main": "urlweb.js",
   "scripts": {
-    "dev": "node --watch app.js",
-    "start": "node app.js"
+    "dev": "node --watch urlweb.js",
+    "start": "node urlweb.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
